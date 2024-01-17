@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div>
+      <!-- post request to server -->
+      <form action="/blogs" method="post">
+        <label for="title">Blog title:</label>
+        <input type="text" name="title" id="" required />
+        <label for="snippet">Blog snippet:</label>
+        <input type="text" name="snippet" id="" required />
+        <label for="body">Blog Body:</label>
+        <textarea name="body" id="" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
